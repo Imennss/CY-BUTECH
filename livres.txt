@@ -1,0 +1,8 @@
+Douceurs_d'antan         Marie_Leteuré 3331 cuisine
+Etudier_la_physique      Moissard      3332 physique
+La_peste                 Albert_Camus  3333 littérature
+L'anglais_pour_tous      Michelle      3334 anglais
+La_rencontre             Charles_Pépin 3335 philosophie
+Le_beau_livre_des_maths  Clifford      3336 mathématiques
+Petit_pays_Faye_97822_histoire
+le_fumoir_Jauffret_10706_histoire    
