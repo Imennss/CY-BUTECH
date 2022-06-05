@@ -57,9 +57,7 @@ User *LireUsers(){
         fscanf(fichier, "%d", &tab[i].nbEmprunt);
         fscanf(fichier, "%d", &tab[i].nbPenalite);
     }
-//    for(int i=0; i<10; i++){
-        //printf("\n User: %s \n Mdp: %s \n Role: %d \n Nombre d'emprunt: %d \n Nombre de pénalité: %d \n"  , tab[i].user, tab[i].mdp, tab[i].role, tab[i].nbEmprunt, tab[i].nbPenalite);
-//    }
+
     
     fclose(fichier);
     
@@ -95,9 +93,7 @@ Livre *LireLivres(){
         fscanf(fichier, "%d", &tabLivres[i].numeroId);
         fscanf(fichier, "%s", tabLivres[i].categorie);
     }
-//    for(int i=0; i<10; i++){
-        //printf("\n Titre: %s \n Auteur: %s \n ID: %d \n Catégorie : %s \n" , tabLivres[i].titre, tabLivres[i].auteur, tabLivres[i].numeroId, tabLivres[i].categorie);
-//    }
+
     
     fclose(fichier);
     
@@ -213,7 +209,7 @@ int rechercheLivreID(char livreAchercher[70], Livre* tabLivre){
     
     for(int i=0; i<10; i++){
         if (strcmp(livreAchercher,tabLivre[i].titre)==0){
-            printf("\njcrois j'ai trouvé : %d\n", tabLivre[i].numeroId);
+          
             return tabLivre[i].numeroId;
         }
     }
@@ -232,12 +228,12 @@ int rechercheEmpruntID(int idLivre, Emprunt* tabEmprunt){
     for(int i=0; i<10; i++){
         if (idLivre==tabEmprunt[i].ID){
             indice = i;
-            printf("\n Voilà l'indice du livre  :%d\n", indice);
+       
             break;
         }
     }
     
-    printf("recherche emprunt ID: %d", indice);
+
     return indice;
 }
 
@@ -251,7 +247,7 @@ int rechercheEmprunt(char empruntAchercher[100], Emprunt* tabEmprunt){
     for(int i=0; i<10; i++){
         if (strcmp(empruntAchercher,tabEmprunt[i].empTitre)==0){
             indice = i;
-            printf("\n Voilà l'indice du livre :%d\n", indice);
+    
             break;
         }
     }
@@ -332,11 +328,7 @@ Emprunt *supprimerUnEmprunt(Emprunt *tabEmprunt, int indiceEmpruntSupp){
         tabEmprunt[i] = tabEmprunt[i+1];
     }
     
-//      printf(" Aprés la suppression, le tableau = \n");
-//
-//    for (int i = 0; i < 9; i++){
-//        printf("%d %s %s %s\n", tabEmprunt[i].ID, tabEmprunt[i].emprunteur, tabEmprunt[i].empTitre, tabEmprunt[i].empAuteur);
-//    }
+
     
     return tabEmprunt;
 }
