@@ -1,7 +1,12 @@
 !!!! READ ME !!!!
 
-
 PROJET BIBLIOTHEQUE
+
+BELCAÏD Manâl
+EL MABROUK Imen
+
+Groupe MI 5
+
 
 
 + POUR COMPILER, écrire dans votre terminal: make all
